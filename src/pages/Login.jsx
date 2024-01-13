@@ -8,13 +8,11 @@ const Login = () => {
 
   const handleLogin = () => {
     // Add your login logic here
-    // For simplicity, assume login is successful
-    // In a real application, you'd perform server-side authentication
     const isAuthenticated = true;
 
     if (isAuthenticated) {
       // Redirect to the home page after successful login
-      navigate('/home');
+      navigate('/');
     }
   };
 

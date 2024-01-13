@@ -3,7 +3,7 @@ import Card from '../components/Card';
 import { useTranslation } from 'react-i18next';
 
 const Home = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const cardData = {
     title: 'Sample Card',
     description: t('des'),
