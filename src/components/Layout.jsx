@@ -1,9 +1,10 @@
 import React from 'react';
 import Header from '../components/Header';
+import NavBottom from './NavBottom';
 
 import userImg from '../assets/images/avatar.png';
 
-const FormLayout = ({ children }) => {
+const FormLayout = ({ children, title }) => {
   const pageTitle = 'Title';
   const user = {
     username: 'Cyan',
@@ -13,6 +14,7 @@ const FormLayout = ({ children }) => {
     <div>
       <Header title={pageTitle} user={user} />
       <div className="w-full h-screen">{children}</div>
+      <NavBottom/>
     </div>
   );
 };
